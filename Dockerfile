@@ -1,5 +1,5 @@
 FROM tomcat
 WORKDIR ./testjenkins/webapp-rosha-2/spring-boot-hello-world-example#
-COPY ./spring-boot-hello-world-example/target/*.jar .
-CMD ["java","-jar","spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar"]
+COPY ./spring-boot-hello-world-example/src/*.java .
+CMD ["java","SpringBootHelloWorldExampleApplication.java"]
 EXPOSE 8080
